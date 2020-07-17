@@ -4,51 +4,64 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
 <header>
-  <div id='first' class='top-heading'>
-    <h2>HEADING 1</h2>
-    <p class='subheading'>A yearly review of my favorite products an supplies!</p>
+  <div class='top-heading'>
+    <div id='first-layer'>
+      <h2>HEADING 1</h2>
+      <p class='subheading'>A yearly review of my favorite products an supplies!</p>
+    </div>
   </div>
   <div id='second' class='top-heading'>
-    <h2>SECOND HEADING</h2>
-    <p class='subheading'>Constantly updated sales from different companies</p>
+    <div id='second-layer'>
+      <h2>SECOND HEADING</h2>
+      <p class='subheading'>Constantly updated sales from different companies</p>
+    </div>
   </div>
   <div id='third' class='top-heading'>
-    <h2>ANOTHER ONE</h2>
-    <p class='subheading'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+    <div id='third-layer'>
+      <h2>ANOTHER ONE</h2>
+      <p class='subheading'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+    </div>
   </div>
 </header>
 <main>
-  <div id='introduction'>
-    <img id='headshot' src='./images/whamheadshot_large.png'>
-    <div id='main-text'>
-      <h1>HI THERE!</h1>
-      <p>Duis leo. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce pharetra convallis urna. Pellentesque commodo eros a enim. Sed a libero. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi.</p>
-      <button>LEARN MORE</button>
+  <div id='intro-container'>
+    <div id='introduction'>
+      <img id='headshot' src='./images/whamheadshot_large.png'>
+      <div id='main-text'>
+        <h1>HI THERE!</h1>
+        <p>Duis leo. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce pharetra convallis urna. Pellentesque commodo eros a enim. Sed a libero. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi.</p>
+        <button>LEARN MORE</button>
+      </div>
     </div>
   </div>
   <div id='content'>
-    <div id='popular-posts'>
+    <div id='popular-posts' class='content-box'>
       <h2 class='content-heading'>POPULAR POSTS</h2>
-      <ul id='popular-list'>
-        <li>FREE INK SWATCH DOWNLOADS</li>
-        <li>STAMP STORAGE</li>
-        <li>MY FAVORITE CRAFY THINGS</li>
-      </ul>
-    </div>
-    <div id='special-message'>
+      <div class='sub-content'>
+        <ul id='popular-list'>
+          <li>FREE INK SWATCH DOWNLOADS</li>
+          <li>STAMP STORAGE</li>
+          <a href='#'><li>MY FAVORITE CRAFY THINGS</li></a>
+        </ul>
+      </div>
+      </div>
+    <div id='special-message' class='content-box'>
       <h2 class='content-heading'>SPECIAL MESSAGE</h2>
-      <p>Quisque ut nisi, in hac habitasse platea dictumst. Nullam quis ante. In turpis. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
-      <p>Cras ultricies mi eu turpis hendrerit fringilla. Praesent nonummy.</p>
-      <img id='grey' src='./images/grey_big.png'>
+      <div class='sub-content'>
+        <p>Quisque ut nisi, in hac habitasse platea dictumst. Nullam quis ante. In turpis. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
+        <p>Cras ultricies mi eu turpis hendrerit fringilla. Praesent nonummy.</p>
+        <img id='grey' src='./images/grey_big.png'>
+      </div>
     </div>
   </div>
 </main>
 <footer>
   <div id='footer-main'>
-    <div id='recent'>
+    <div id='recent' class='footer-section'>
       <h3>RECENT POSTS</h3>
       <ul>
         <li>World Card Making Day Salves & $100 Gift Card Giveaway... and Want a Card?</li>
@@ -57,7 +70,7 @@
         <li>Made in Minutes: Faux Metal Etching + Special Stamp Set</li>
       </ul>
     </div>
-    <div id='categories'>
+    <div id='categories' class='footer-section'>
       <h3>CATEGORIES</h3>
       <ul>
         <li>Stamping Techniques</li>
@@ -67,7 +80,7 @@
         <li>Distress Ink</li>
       </ul>
     </div>
-    <div id='tags'>
+    <div id='tags' class='footer-section'>
       <h3>TAGS</h3>
       <ul>
         <li>Encouragement</li>
@@ -75,14 +88,14 @@
         <li>Thank You</li>
       </ul>
     </div>
-    <div id='contact'>
+    <div id='contact' class='footer-section'>
       <div id='social-search'>
-        <a href='http://www.pinterest.com'><img src=''></a>
-        <a href='http://www.twitter.com'><img src=''></a>
-        <a href='http://www.facebook.com'><img src=''></a>
-        <a href='http://www.instagram.com'><img src=''></a>
-        <a href='http://www.youtube.com'><img src=''></a>
-        <img id='toggle-searchfield' src=''>
+        <a href='http://www.pinterest.com'><div id='pinterest'></div></a>
+        <a href='http://www.twitter.com'><div id='twitter'></div></a>
+        <a href='http://www.facebook.com'><div id='facebook'></div></a>
+        <a href='http://www.instagram.com'><div id='instagram'></div></a>
+        <a href='http://www.youtube.com'><div id='youtube'></div></a>
+        <div id='toggle-search'></div>
         <form>
           <input type="text" name="search" placeholder="Search...">
           <input type="submit" value='Search'>
@@ -90,16 +103,20 @@
       </div>
       <div id='address'>
         <span>My Great Company</span>
+        <br>
         <span>P.O. Box 40404</span>
+        <br>
         <span>Akron, OH 44304</span>
       </div>
       <p>Please do not send product without contacting me first. Thanks!</p>
-      <p id='attribution'>DESIGNED BY </p><img src='./images/logo_large.png'>
+      <p id='attribution'>DESIGNED BY <img id='logo' src='./images/logo_large.png'></p>
     </div>
   </div>
-  <div id='copyright'>
-    <span id='copyright'>Copyright 2020 by Kaulig Media, LLC. All Rights Reserved.</span>
-    <a id='terms' href='#'>Terms of Use</a>
+  <div id='copyright-container'>
+    <div id='copyright'>
+      <span id='copyright'>Copyright 2020 by Kaulig Media, LLC. All Rights Reserved.</span>
+      <a id='terms' href='#'>Terms of Use</a>
+    </div>
   </div>
 </footer>
   </body>

@@ -1,3 +1,261 @@
 body {
   width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
 }
+
+
+/* Header start */
+header {
+  width: 90%;
+  height: 355px;
+  display: flex;
+  flex-direction: row;
+  margin: 40px auto;
+  justify-content: center;
+}
+div.top-heading {
+  color: white;
+  width: 355px;
+  height: 100%;
+  background-image: url('./images/thankyounote_large.png');
+  background-size: cover;
+  margin: 16px;
+}
+div#first-layer {
+  background-color: rgb(132,205,198, .91);
+  width: 355px;
+  height: 100%;
+  position: relative;
+  bottom: 23px;
+}
+div#second-layer {
+  background-color: rgb(254,74,73, .91);
+  width: 355px;
+  height: 100%;
+  position: relative;
+  bottom: 23px;
+}
+div#third-layer {
+  background-color: rgb(221,223,135, .91);
+  width: 355px;
+  height: 100%;
+  position: relative;
+  bottom: 23px;
+}
+div.top-heading h2 {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 29%;
+}
+div.top-heading p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+/* Header end */
+
+/* Main content start */
+main {
+  margin-top: 100px;
+}
+div#intro-container{
+  background: #F4F4F4;
+  overflow: auto;
+}
+div#introduction {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  margin: 40px auto;
+  align-items: center;
+}
+div#main-text {
+  margin-left: 40px;
+}
+img#headshot {
+  width: 258px;
+  height: 258px;
+}
+div#main-text h1 {
+  font-size: 34px;
+  color: #5D5D5D;
+  font-weight: 400;
+}
+div#main-text p {
+  color: #5D5D5D;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 31px;
+}
+div#main-text button {
+  background: #DDDF87;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #777777;
+  height: 55px;
+  width: 155px;
+}
+
+div#content {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 21px;
+}
+h2.content-heading {
+  color: #FE4A49;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+div.content-box {
+  width: 50%;
+  margin: 20px;
+}
+div.sub-content {
+  border-top: 3px solid #FE4A49;
+}
+div.sub-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 42px;
+}
+div.sub-content ul li {
+  margin: 25px 0;
+  color: #5D5D5D;
+}
+div.sub-content ul a {
+  text-decoration: none;
+}
+div.sub-content ul a li {
+  color: #84CDC6;
+}
+div.sub-content p {
+  color: #5D5D5D;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 31px;
+}
+img#grey {
+  width: 354px;
+  height: 39px;
+}
+/* Main content end */
+
+/* Footer start */
+footer {
+  background: #F4F4F4;
+}
+div#footer-main {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 50px;
+  align-items: center;
+  height: 350px;
+  width: 70%;
+}
+div.footer-section {
+  padding: 0 30px;
+  height: 287px;
+}
+div#recent, div#categories {
+  border-right: 1px solid #5D5D5D;
+  width: 21%;
+}
+div#footer-main h3 {
+  color: #84CDC6;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 0;
+}
+div#footer-main ul {
+  list-style-type: none;
+  padding: 0;
+  color: #5D5D5D;
+}
+div#footer-main ul li {
+  margin: 20px 0;
+  line-height: 24px;
+}
+div#footer-main span {
+  color: #5D5D5D;
+  font-size: 16px;
+  display: inline-block;
+  margin: 3px 0;
+}
+div#footer-main p {
+  color: #5D5D5D;
+  line-height: 24px;
+  font-size: 14px;
+}
+div#contact {
+  width: 23%;
+  margin-left: 117px;
+}
+form {
+  display: none;
+}
+div#social-search {
+  display: flex;
+  margin-left: -10px;
+}
+div#social-search div {
+  width: 30px;
+  height: 30px;
+  margin: 7px;
+  margin-top: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+div#pinterest {
+  background-image: url("https://img.icons8.com/windows/32/000000/pinterest-p.png");
+}
+div#twitter {
+  background-image: url("https://img.icons8.com/android/24/000000/twitter.png");
+}
+div#facebook {
+  background-image: url("https://img.icons8.com/material-rounded/24/000000/facebook-f--v1.png");
+}
+div#instagram {
+  background-image: url("https://img.icons8.com/metro/26/000000/instagram-new.png");
+}
+div#social-search div#youtube {
+  background-image: url('./images/yt_icon_mono_light.png');
+  height: 37px;
+  width: 37px;
+  margin-left: 15px;
+  margin-top: 22px;
+}
+div#social-search div#toggle-search {
+  background-image: url('./images/search.png');
+  width: 50px;
+  height: 50px;
+  margin-left: 4px;
+  margin-top: 11px;
+}
+img#logo {
+  width: 27%;
+}
+div#copyright-container {
+  background: white;
+}
+div#copyright {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+p#attribution {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+span#copyright {
+  color: #5D5D5D;
+  font-size: 14px;
+}
+a#terms {
+  color: #84CDC6;
+  float: right;
+}
+/* Footer end */
