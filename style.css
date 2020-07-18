@@ -15,28 +15,28 @@ div.top-heading {
   color: white;
   background-image: url('./images/thankyounote_large.png');
   background-size: cover;
-  width: 250px;
-  height: 250px;
+  width: 290px;
+  height: 290px;
   margin: 15px auto;
 }
 div#first-layer {
   background-color: rgb(132,205,198, .91);
-  width: 250px;
-  height: 250px;
+  width: 290px;
+  height: 290px;
   position: relative;
   bottom: 23px;
 }
 div#second-layer {
   background-color: rgb(254,74,73, .91);
-  width: 250px;
-  height: 250px;
+  width: 290px;
+  height: 290px;
   position: relative;
   bottom: 23px;
 }
 div#third-layer {
   background-color: rgb(221,223,135, .91);
-  width: 250px;
-  height: 250px;
+  width: 290px;
+  height: 290px;
   position: relative;
   bottom: 23px;
 }
@@ -55,7 +55,7 @@ div.top-heading p {
 
 /* Main content start */
 main {
-  margin-top: 100px;
+  margin-top: 17px;
 }
 div#intro-container{
   background: #F4F4F4;
@@ -67,9 +67,6 @@ div#introduction {
   flex-direction: column;
   margin: 40px auto;
   align-items: center;
-}
-div#main-text {
-
 }
 img#headshot {
   width: 210px;
@@ -159,9 +156,17 @@ div#footer-main {
 
 div#contact {
   padding-right: 0;
+  border-top: 1px solid #5D5D5D;
+}
+div#recent {
+  border-bottom: 1px solid #5D5D5D;
 }
 div#categories {
   padding-right: 24px;
+  padding-top: 21px;
+}
+div#tags {
+  padding-top: 21px;
 }
 div#footer-main h3 {
   color: #84CDC6;
@@ -463,6 +468,13 @@ a#terms {
   header {
     flex-direction: row;
   }
+  div.top-heading, div#first-layer, div#second-layer, div#third-layer {
+    width: 235px;
+    height: 235px;
+  }
+  div#second {
+    margin: 15px 0px;
+  }
   div#introduction {
     flex-direction: row;
     width: 90%;
@@ -510,7 +522,7 @@ a#terms {
   header {
     flex-direction: row;
   }
-  div.top-heading {
+  div.top-heading, div#first-layer, div#second-layer, div#third-layer {
     width: 300px;
     height: 300px;
   }
@@ -564,10 +576,12 @@ a#terms {
   }
   div#recent {
     padding-left: 40px;
+    border-bottom: none;
   }
   div#contact {
     width: 21%;
     padding-right: 0;
+    border-top: none;
   }
 
 }
