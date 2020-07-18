@@ -380,6 +380,8 @@ div#footer-main {
 div.footer-section {
   padding: 0 30px;
   height: 287px;
+  width: 160px;
+  padding-left: 20px;
 }
 div#recent, div#categories {
   border-right: 1px solid #5D5D5D;
@@ -387,6 +389,11 @@ div#recent, div#categories {
 }
 div#recent {
   padding-left: 40px;
+}
+div#contact {
+  width: 28%;
+  margin-left: 71px;
+  padding-right: 0;
 }
 div#footer-main h3 {
   font-size: 20px;
@@ -407,16 +414,6 @@ div#footer-main span {
 div#footer-main p {
   line-height: 24px;
   font-size: 14px;
-}
-div.footer-section {
-  padding-left: 20px;
-  padding-right: 30px;
-  width: 160px;
-}
-div#contact {
-  width: 28%;
-  margin-left: 71px;
-  padding-right: 0;
 }
 div#social-search {
   display: flex;
@@ -510,5 +507,67 @@ a#terms {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+  header {
+    flex-direction: row;
+  }
+  div.top-heading {
+    width: 300px;
+    height: 300px;
+  }
+  div#second {
+    margin: 15px 0px;
+  }
+  div#introduction {
+    flex-direction: row;
+    width: 90%;
+  }
+  main {
+    margin-top: 27px;
+  }
+  img#headshot {
+    width: 192px;
+    margin-left: 13px;
+    margin-bottom: 15px;
+  }
+  div#main-text {
+    width: 61%;
+    margin-left: 48px;
+  }
+  div#main-text h1 {
+    text-align: left;
+  }
+  div#main-text button {
+    width: auto;
+  }
+  div#content {
+    flex-direction: row;
+    width: 91%;
+  }
+  div.content-box {
+    width: 90%;
+    margin: 0px 23px;
+  }
+  div.footer-section {
+    padding: 0 30px;
+    height: 287px;
+    width: 160px;
+    padding-left: 20px;
+  }
+  div#footer-main {
+    width: 94%;
+    padding-top: 49px;
+    height: 336px;
+  }
+  div#recent, div#categories {
+    border-right: 1px solid #5D5D5D;
+    width: 21%;
+  }
+  div#recent {
+    padding-left: 40px;
+  }
+  div#contact {
+    width: 21%;
+    padding-right: 0;
+  }
 
 }
