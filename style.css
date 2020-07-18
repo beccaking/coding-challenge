@@ -197,8 +197,10 @@ div#social-search {
   margin-left: -10px;
 }
 div#social-search div {
-  margin: 7px;
+  margin: 4px;
   margin-top: 20px;
+  height: 18px;
+  width: 18px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
@@ -223,7 +225,9 @@ div#social-search div#youtube {
 div#social-search div#toggle-search {
   background-image: url('./images/search.png');
   margin-left: 4px;
-  margin-top: 10px;
+  margin-top: 11px;
+  height: 33px;
+  width: 33px;
 }
 img#logo {
   width: 27%;
@@ -456,4 +460,55 @@ a#terms {
   float: right;
 }
 /* Footer end */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+  header {
+    flex-direction: row;
+  }
+  div#introduction {
+    flex-direction: row;
+    width: 90%;
+  }
+  main {
+    margin-top: 27px;
+  }
+  img#headshot {
+    width: 192px;
+    margin-left: 13px;
+    margin-bottom: 15px;
+  }
+  div#main-text {
+    width: 61%;
+    margin-left: 48px;
+  }
+  div#main-text h1 {
+    text-align: left;
+  }
+  div#content {
+    flex-direction: row;
+    width: 91%;
+  }
+  div.content-box {
+    width: 90%;
+    margin: 0px 23px;
+  }
+  div#recent {
+    width: 40%;
+    padding-right: 45px;
+  }
+  div#categories {
+    width: 30%;
+    padding-right: 10px;
+  }
+  div#tags {
+    width: 20%;
+  }
+  div#contact {
+    border-top: 1px solid #5D5D5D;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+
 }
