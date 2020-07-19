@@ -1,0 +1,21 @@
+[
+    {
+        "Name": "John Doe",
+        "Occupation": "Programmer",
+        "Age": 55,
+        "Hobbies": ["Gymnastics", "Woodworking"]
+    },
+    {
+        "Name": "Silver Sable",
+        "Occupation": "Thief",
+        "Age": null,
+        "Super Powers": ["G'luck"]
+    },
+    {
+        "name": "Peter Parker",
+        "Occupation": "Photographer",
+        "Age": 16,
+        "Super Powers": ["Wall-crawling", "Sense, of the spider", "Durability", "Strength"],
+        "Hobbies": ["Saving People", "Brooding &mdash; over lost uncle"]
+    }
+]

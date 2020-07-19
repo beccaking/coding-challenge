@@ -1,0 +1,25 @@
+{
+  "name": "coding-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "conversion.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beccaking/coding-challenge.git"
+  },
+  "author": "B. King",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beccaking/coding-challenge/issues"
+  },
+  "homepage": "https://github.com/beccaking/coding-challenge#readme",
+  "dependencies": {
+    "csvjson": "^5.1.0",
+    "fs": "0.0.1-security",
+    "jsonstream": "^1.0.3",
+    "stream": "0.0.2"
+  }
+}
