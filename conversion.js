@@ -1,21 +1,34 @@
-const csvjson = require('csvjson');
-const fs = require('fs');
-const stream = require('stream');
-const JSONStream = require('jsonstream');
-const createReadStream = fs.createReadStream;
-const createWriteStream = fs.createWriteStream;
-let line = 0;
-const transformJsonToCSV = new stream.Transform({
-    transform: function transformer(chunk, encoding, callback) {
-        line++;
-        callback(false, csvjson.toCSV(chunk, {
-            headers: line > 1 ? 'none' : 'key'
-        }));
+const json = [
+    {
+        "Name": "John Doe",
+        "Occupation": "Programmer",
+        "Age": 55,
+        "Hobbies": ["Gymnastics", "Woodworking"]
     },
-    readableObjectMode: true,
-    writableObjectMode: true,
-});
-createReadStream('./content.json', 'utf-8')
-    .pipe(JSONStream.parse('*'))
-    .pipe(transformJsonToCSV)
-    .pipe(createWriteStream('./content.csv'));
+    {
+        "Name": "Silver Sable",
+        "Occupation": "Thief",
+        "Age": null,
+        "Super Powers": ["G'luck"]
+    },
+    {
+        "name": "Peter Parker",
+        "Occupation": "Photographer",
+        "Age": 16,
+        "Super Powers": ["Wall-crawling", "Sense, of the spider", "Durability", "Strength"],
+        "Hobbies": ["Saving People", "Brooding &mdash; over lost uncle"]
+    }
+]
+
+//Install json-2-csv, fs through npm (doc-path and deeks auto-installed as json-2-csv dependencies)
+const converter = require('json-2-csv');
+
+const fs = require('fs');
+
+converter.json2csv(json, (error, csv) => {
+  if(error){
+    throw error;
+  }
+
+  fs.writeFileSync('content.csv', csv)
+})
