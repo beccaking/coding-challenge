@@ -1,26 +1,7 @@
-const json = [
-    {
-        "Name": "John Doe",
-        "Occupation": "Programmer",
-        "Age": 55,
-        "Hobbies": ["Gymnastics", "Woodworking"]
-    },
-    {
-        "Name": "Silver Sable",
-        "Occupation": "Thief",
-        "Age": null,
-        "Super Powers": ["G'luck"]
-    },
-    {
-        "name": "Peter Parker",
-        "Occupation": "Photographer",
-        "Age": 16,
-        "Super Powers": ["Wall-crawling", "Sense, of the spider", "Durability", "Strength"],
-        "Hobbies": ["Saving People", "Brooding &mdash; over lost uncle"]
-    }
-]
+ const json = require('./content.json')
+ //A property name was not capitalized in one occurrence, splitting data incorrectly. If this happens with future data, search and replace the incorrect property name with correct in the code editor
 
-//Install json-2-csv, fs through npm (doc-path and deeks auto-installed as json-2-csv dependencies)
+//Install json-2-csv, fs modules through npm (doc-path and deeks auto-installed as json-2-csv dependencies)
 const converter = require('json-2-csv');
 
 const fs = require('fs');
@@ -29,6 +10,5 @@ converter.json2csv(json, (error, csv) => {
   if(error){
     throw error;
   }
-
   fs.writeFileSync('content.csv', csv)
 })
